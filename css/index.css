@@ -1,0 +1,243 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: '苹方';
+}
+ul,li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+i{
+	font-style: normal;
+}
+/* 容器 */
+.wrapper{
+	width: 100%;
+}
+/* 导航栏 */
+.wrapper nav{
+	width: 100%;
+	height: 1.18rem;
+	background-color: #f2f2f2;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0.1rem 0.12rem 0.22rem;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+/* 状态栏 */
+.wrapper nav .status{
+	display: flex;
+	align-items: center;
+}
+.wrapper nav .status img{
+	width: 100%;
+}
+/* 标题 */
+.wrapper nav .top-tools{
+	padding: 0rem 0.2rem;
+	box-sizing: border-box;
+}
+.wrapper nav .top-tools ul{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	font-size: 0.32rem;
+	font-weight: 600;
+}
+.wrapper nav .top-tools ul li{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/* 信息栏 */
+.wrapper .title-info{
+	height: 1.74rem;
+	width: 100%;
+	background: url('../images/title-background.png') no-repeat;
+	background-size: cover;
+	padding: 0.32rem 0.4rem;
+	box-sizing: border-box;
+}
+.wrapper .title-info ul{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	color:#fff;
+	font-size: 0.3rem;
+	letter-spacing: 0.03rem;
+}
+.wrapper .title-info ul>li>h3{
+	font-weight: 600;
+	font-size: 0.36rem;
+}
+.wrapper .title-info ul>li>span,ul>li>i{
+	font-weight: 500;
+	font-size: 0.24rem;
+}
+.wrapper .title-info ul>li>i{
+	font-weight: 400;
+}
+.wrapper .title-info .course-show{
+	display: flex;
+}
+.wrapper .title-info .course-show img{
+	width: 0.32rem;
+	height: 0.34rem;
+}
+.wrapper .title-info .course-show span,i{
+	margin-left: 0.2rem;
+}
+.wrapper .title-info .course-show span::after,span::before{
+	content: "|";
+	font-weight: 600;
+}
+.wrapper .title-info .course-show span::after{
+	margin-left: 0.05rem;
+}
+.wrapper .title-info .course-show span::before{
+	margin-right: 0.05rem;
+}
+/* 主体内容 */
+.wrapper main{
+	width: 100%;
+	min-height: 10.5rem;
+	overflow: scroll;
+	padding: 0.47rem 1.06rem 1rem 0.4rem;
+	box-sizing: border-box;
+	letter-spacing: 0.02rem;
+}
+/* 对话内容 */
+.wrapper main ul{
+	width: 100%;
+	overflow: scroll;
+}
+.wrapper main ul li{
+	width: 100%;
+	margin-bottom: 0.64rem;
+	font-size: 0.22rem;
+}
+.wrapper main ul li h6{
+	font-size: 0.22rem;
+}
+/* 系统对话 */
+.wrapper main ul li.system-msg,li.teacher-video{
+	display: flex;
+}
+.wrapper main ul li.system-msg>.system-msg-info{
+	margin-left: 0.24rem;
+}
+.wrapper main ul li.system-msg>.system-msg-info .title h6{
+	color: #666666;
+}
+.wrapper main ul li.system-msg>.system-msg-info .talkBox-bottom{
+	display: flex;
+	align-items: flex-end;
+	margin-top: 0.13rem;
+	position: relative;
+}
+.wrapper main ul li.system-msg>.system-msg-info .talkBox-bottom h5,.video-img{
+	background-color: #f2f4f5;
+	padding: 0.2rem;
+	box-sizing: border-box;
+	border-radius: 0.2rem;
+	letter-spacing: 0.03rem;
+}
+.wrapper main ul li.system-msg>.system-msg-info .talkBox-bottom:before{
+	content: "";
+	border-right: 0.35rem solid #f2f4f5;
+    border-top: 0.2rem solid transparent;
+    border-bottom: 0.2rem solid transparent;
+    border-left: 0;
+    position: absolute;
+    left: 0.08rem;
+    top: 0.3rem;
+    margin-left: -0.2rem;
+    margin-top: -0.2rem;
+    transform: rotate(25deg);
+    z-index: -1;
+}
+.wrapper main ul li.system-msg>.system-msg-info .talkBox-bottom .btn{
+	margin-left: 0.2rem;
+}
+/* 老师留言 */
+.wrapper main ul li.teacher-video .title{
+	display: flex;
+}
+.wrapper main ul li.teacher-video .title i{
+	font-size: 0.16rem;
+	padding: 0.02rem 0.1rem;
+	box-sizing: border-box;
+	border-radius: 0.2rem;
+	background-color: #fda46c;
+	color: #fff;
+	text-align: center;
+}
+.wrapper main ul li.system-msg>.system-msg-info .talkBox-bottom .video-img{
+	padding: 0rem;
+	background: #fff;
+	position: relative;
+}
+.wrapper main ul li.system-msg>.system-msg-info .talkBox-bottom .video-img img{
+	width: 100%;
+	border-radius: 0.2rem;
+}
+.wrapper main ul li.teacher-video>.system-msg-info .talkBox-bottom:before{
+	border-right: 0.35rem solid #A79A81;
+}
+/* 播放器信息 */
+.wrapper main ul li.system-msg>.system-msg-info .talkBox-bottom .video-img .video-info{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	bottom: 0.2rem;
+	color: #fff;
+	padding: 0rem 0.2rem;
+	box-sizing: border-box;
+	font-weight: 400;
+}
+/* 播放按钮 */
+.wrapper main ul li.system-msg>.system-msg-info .talkBox-bottom .video-img .playVideo{
+	width: 0.8rem;
+	height: 0.8rem;
+	position: absolute;
+	background: #fff;
+	border-radius: 50%;
+	top: 0rem;
+	bottom: 0rem;
+	left: 0rem;
+	right: 0rem;
+	margin: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.wrapper main ul li.system-msg>.system-msg-info .talkBox-bottom .video-img .playVideo i{
+	border-left: 0.16rem solid #ff6700;
+    border-top: 0.16rem solid transparent;
+    border-bottom: 0.16rem solid transparent;
+    border-right: 0rem;
+    margin-left: 0rem;
+}
+/* 底部 */
+.wrapper footer{
+	width: 100%;
+	height: 1rem;
+	box-shadow: 0rem -0.03rem 0.01rem 0.01rem rgba(0,0,0,0.1);
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 99;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #fff;
+}

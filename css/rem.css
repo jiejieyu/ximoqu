@@ -1,0 +1,42 @@
+/*
+* @Author: j
+* @Date:   2018-07-24 14:52:35
+* @Last Modified by:   j
+* @Last Modified time: 2018-07-24 16:56:56
+*/
+
+@media screen and (min-width:320px){
+	html{
+		font-size: calc(320/750*100px);
+	}
+}
+@media screen and (min-width:360px){
+	html{
+		font-size: 48px;
+	}
+}
+@media screen and (min-width:375px){
+	html{
+		font-size: 50px;
+	}
+}
+@media screen and (min-width:412px){
+	html{
+		font-size: calc(412/750*100px);
+	}
+}
+@media screen and (min-width:414px){
+	html{
+		font-size: 55px;
+	}
+}
+@media screen and (min-width:750px){
+	html{
+		font-size: 100px;
+	}
+}
+@media screen and (min-width:768px){
+	html{
+		font-size: 102px;
+	}
+}
